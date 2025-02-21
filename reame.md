@@ -381,4 +381,26 @@ console.log(factorial(5));
 
 - ### `indexOf()` - ищет по индексу в массиве , возвращает то что найдет под заданным индексом.
 
+# JS Mechanism
+***As you probably heard, JavaScript is a single-thread programming language. It means processed operations are handled one by one. JavaScript doesn’t have the ability to make operations parallel. We can do it in a programming language like Java, where we have the possibility to run several calculations in multiple threads. JavaScript cannot do that, it processes all the operations in sequence, so it might be very slow. But it isn’t! All of you are using very complex websites and huge web applications like Facebook. At the same time, the browser is downloading posts into our wall, we are writing and sending messages, displaying our friends’ images, clicking “Like” under them, and we don’t have any delays. It is all because of the mechanism called EventLoop***
+
+<details>
+    <summary>Destructuring assignment</summary>
+    <br>
+
+***The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables***
+<br>
+
+```javascript 
+
+let a , b  , rest 
+[ a , b ] = [ 10 , 20 ]
+
+console.log(a) //10
+console.log(b) //20
+
+[ a , b , ...rest] = [10 , 20 , 30 , 40 , 50]
+console.log(rest) // [30 , 40 , 50]
+
+
 
